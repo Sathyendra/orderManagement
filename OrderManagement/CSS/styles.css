@@ -1,0 +1,126 @@
+﻿* {
+    padding: 0;
+    box-sizing: border-box;
+    margin-right: 0;
+    margin-top: 0;
+}
+
+body {
+    background: #333333 url('../Images/marquee-737max-2016-07.jpg') -165px 0 no-repeat;
+    background-size: cover;
+    font-family: 'Roboto', sans-serif;
+}
+.login-box, .registration-form {
+    background: rgba(255,255,255,0.8);
+    padding: 20px;
+    border-radius: 3px;
+    margin: 0 auto;
+    min-width: 300px;
+    width: 25%;
+}
+.registration-form {
+    width: 50%;
+    margin-top: 30px;
+}
+.login-box input[type="text"], .login-box input[type="password"], .registration-form input[type="text"],.registration-form input[type="password"], .registration-form select{
+    border: 1px solid #888888;
+    height: 30px;
+    line-height: 30px;
+    padding: 0 10px;
+    width: 100%;
+}
+.login-box input[type="submit"] , .registration-form input[type="submit"]{
+    background: #f9564f;
+    border: 1px solid #f9564f;
+    border-radius: 3px;
+    display: inline-block;
+    font-size: 18px;
+    height: 30px;
+    line-height: 0;
+    padding: 20px 10px 25px;
+    width: 100%;
+    color: #ffffff;
+    font-weight: bold;
+    cursor: pointer;
+}
+.login-box input[type="submit"]:hover,  .registration-form input[type="submit"]:hover{
+    background: #131212;    
+    border-color: #131212;
+}
+
+/* Menu Styles */
+#Menu1 {
+    background-color: rgba(6, 152, 217, 0.8);
+    font-size: 16px!important;
+    height: 42px;
+    line-height: 40px;
+    width: 100%;
+    color : #ffffff;
+    text-align: left;
+}
+
+#Menu1 ul {
+    max-width: 1000px;
+    margin: 0 auto!important; 
+    float: none!important;   
+}
+#Menu1> ul>li{
+    padding: 0 20px 0 0;
+}
+#Menu1 img.icon {
+    border-style: none;
+    vertical-align: middle;
+}
+#Menu1 img.separator {
+    border-style: none;
+    display: block;
+}
+#Menu1 img.horizontal-separator {
+    border-style: none;
+    vertical-align: middle;
+}
+#Menu1 ul {
+    list-style: outside none none;
+    margin: 0;
+    padding: 0;
+    width: auto;
+}
+#Menu1 ul.dynamic {
+    background-color: rgba(6, 152, 217, 0.8)!important;
+    margin-left: 2px;
+    z-index: 1;
+}
+#Menu1 a {
+    color: White;
+    display: block;
+    font-family: 'Roboto', sans-serif!important;
+    font-size: 16px!important;
+    text-decoration: none;
+    white-space: nowrap;
+    text-align: left;
+}
+#Menu1 a.static {
+    padding: 2px 5px;
+    text-decoration: none;
+}
+
+#Menu1 a.dynamic {
+    padding: 2px 15px!important;
+    text-decoration: none;
+}
+#Menu1 a.static.selected {
+    background-color: #0080cb!important;
+    text-decoration: none;
+}
+#Menu1 a.dynamic.selected {
+    background-color: #0080cb!important;
+    text-decoration: none;
+}
+#Menu1 a.static.highlighted {
+    background-color: #0080cb!important;
+    color: White;
+}
+#Menu1 a.dynamic.highlighted {
+    background-color: #0080cb!important;
+    color: White;
+}

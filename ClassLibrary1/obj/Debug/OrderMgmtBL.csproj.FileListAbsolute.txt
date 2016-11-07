@@ -1,0 +1,5 @@
+c:\users\sathyendram\documents\visual studio 2015\Projects\OrderManagement\ClassLibrary1\bin\Debug\ClassLibrary1.dll
+c:\users\sathyendram\documents\visual studio 2015\Projects\OrderManagement\ClassLibrary1\bin\Debug\ClassLibrary1.pdb
+c:\users\sathyendram\documents\visual studio 2015\Projects\OrderManagement\ClassLibrary1\obj\Debug\OrderMgmtBL.csprojResolveAssemblyReference.cache
+c:\users\sathyendram\documents\visual studio 2015\Projects\OrderManagement\ClassLibrary1\obj\Debug\ClassLibrary1.dll
+c:\users\sathyendram\documents\visual studio 2015\Projects\OrderManagement\ClassLibrary1\obj\Debug\ClassLibrary1.pdb

@@ -1,0 +1,75 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site1.master.cs" Inherits="OrderManagement.Site1" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet" /> 
+    <link href="CSS/styles.css" rel="stylesheet" />
+
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div>
+            <table style="width: 100%">
+                <tr>
+                    <td style="text-align: center">
+                        <h1 style="color: #ffffff; padding: 40px 0 20px">Order Management System</h1>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="text-align: center; position: relative">
+                        <asp:Menu ID="Menu1" runat="server"  DynamicHorizontalOffset="2" Font-Names="Verdana" Font-Size="0.8em" ForeColor="#ffffff" Orientation="Horizontal" StaticSubMenuIndent="10px">
+                            <DynamicHoverStyle BackColor="#7C6F57" ForeColor="White" />
+                            <DynamicMenuItemStyle HorizontalPadding="5px" VerticalPadding="2px" />
+                            <DynamicMenuStyle BackColor="#F7F6F3" />
+                            <DynamicSelectedStyle BackColor="#5D7B9D" />
+                            <Items>
+                                <asp:MenuItem Text="Users" Value="Users">
+                                    <asp:MenuItem Text="Add Users" Value="Add Users" NavigateUrl="~/AddUser.aspx"></asp:MenuItem>
+                                    <asp:MenuItem Text="Search Users" Value="Search Users" NavigateUrl="~/SearchEditUser.aspx"></asp:MenuItem>
+                                    <asp:MenuItem Text="Edit Users" Value="Edit Users" NavigateUrl="~/SearchEditUser.aspx"></asp:MenuItem>
+                                </asp:MenuItem>
+                                <asp:MenuItem Text="Products" Value="Products">
+                                    <asp:MenuItem Text="Add Products" Value="Add Products" NavigateUrl="~/AddProduct.aspx"></asp:MenuItem>
+                                    <asp:MenuItem Text="Search Products" Value="Search Products" NavigateUrl="~/SearchEditProduct.aspx"></asp:MenuItem>
+                                    <asp:MenuItem Text="Edit Products" Value="Edit Products" NavigateUrl="~/SearchEditProduct.aspx"></asp:MenuItem>
+                                </asp:MenuItem>
+                                <asp:MenuItem Text="Customers" Value="Customers">
+                                    <asp:MenuItem Text="Add Customers" Value="Add Customers"></asp:MenuItem>
+                                    <asp:MenuItem Text="Search Customers" Value="Search Customers" NavigateUrl="~/SearchEditCustomer.aspx"></asp:MenuItem>
+                                    <asp:MenuItem Text="Edit Customers" Value="Edit Customers" NavigateUrl="~/SearchEditCustomer.aspx"></asp:MenuItem>
+                                </asp:MenuItem>
+                                <asp:MenuItem Text="Orders" Value="Orders">
+                                    <asp:MenuItem Text="Add Orders" Value="Add Orders" NavigateUrl="~/AddOrder.aspx"></asp:MenuItem>
+                                    <asp:MenuItem Text="Search Orders" Value="Search Orders" NavigateUrl="~/SearchEditOrder.aspx"></asp:MenuItem>
+                                    <asp:MenuItem Text="Edit Orders" Value="Edit Orders" NavigateUrl="~/SearchEditOrder.aspx"></asp:MenuItem>
+                                </asp:MenuItem>
+                            </Items>
+                            <StaticHoverStyle BackColor="#7C6F57" ForeColor="White" />
+                            <StaticMenuItemStyle HorizontalPadding="5px" VerticalPadding="2px" />
+                            <StaticSelectedStyle BackColor="#5D7B9D" />
+                        </asp:Menu>
+                        <div style="position: absolute; right: 10px; top: 10px;">
+                            <asp:ImageButton ID="btnLogout" runat="server" OnClick="btnLogout_Click" ImageUrl="~/Images/sign-in.png"/>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="height: 500px;">
+                        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                        </asp:ContentPlaceHolder>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="text-align: center; color: #333333; padding: 10px; font-size: 14px;">&copy; 1995 - 2016 Boeing. All Rights Reserved.</td>
+                </tr>
+            </table>
+
+        </div>
+    </form>
+</body>
+</html>
